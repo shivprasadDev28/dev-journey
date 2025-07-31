@@ -1,6 +1,6 @@
 #PYTHON
 
-#* topic 
+#* topic completed
 
 """
 output
@@ -11,11 +11,15 @@ loops (for, while)
 nested conditions
 """
 
-# todo Create a program that validates an email address (must contain '@' and '.').
+#* current TOPIC
+#TODO LIST
 
-email = input("enter email: ")
+# todo Find common elements between two lists.
+l = [1,2,4]
+ll = [3,4,5]
 
-if "@" and "." in email:
-    print("Valid email")
-else:
-    print("Not valid")
+for i in range(len(l)):
+    for j in range(len(l)-1):
+        if l[i] == ll[j]:
+            print(ll[j])
+            break

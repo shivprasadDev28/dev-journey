@@ -14,24 +14,23 @@ Tuple
 Set
 Dictionary
 Functions
+CLASS
 """
 
 #* current TOPIC OOP
 
 # TODO 
 
-class Animal:
-    def __init__(self,name):
-        self.name = name
-    
-    def speak(self):
-        print(f"{self.name} makes sounds.")
+from abc import ABC, abstractclassmethod
 
-class Cat(Animal):
-    def speak(self):
-        print("Meow...")
-        #super().speak()
+class Veh(ABC):
+    @abstractclassmethod
+    def start(self):
+        pass
 
-a1 = Cat("Shiv")
-a1.speak()
-Animal.speak(a1)
+class Car(Veh):
+    def start(self):
+        print("Engine started")
+
+c = Car()
+c.start()

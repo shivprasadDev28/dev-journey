@@ -16,14 +16,22 @@ Dictionary
 Functions
 """
 
-#* current TOPIC Functions 
+#* current TOPIC OOP
 
-# TODO Write a function power(x, n) that computes x^n recursively. (Assume n is a non-negative integer.)
+# TODO 
 
-def power(x,n):
-    if n == 0:
-        return 1
-    else:
-        return x * power(x,n-1)
+class Animal:
+    def __init__(self,name):
+        self.name = name
+    
+    def speak(self):
+        print(f"{self.name} makes sounds.")
 
-print(power(2,4))
+class Cat(Animal):
+    def speak(self):
+        print("Meow...")
+        #super().speak()
+
+a1 = Cat("Shiv")
+a1.speak()
+Animal.speak(a1)

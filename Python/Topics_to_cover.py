@@ -20,17 +20,24 @@ CLASS
 #* current TOPIC OOP
 
 # TODO 
+"""
+Create a Book class with: 
 
-from abc import ABC, abstractclassmethod
+Attributes: title, author, pages
 
-class Veh(ABC):
-    @abstractclassmethod
-    def start(self):
-        pass
+Method: describe() that prints:
+"{title} by {author}, {pages} pages"
+"""
 
-class Car(Veh):
-    def start(self):
-        print("Engine started")
+class Book:
+    def __init__(self,title,author,pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+    
+    def describe(self):
+        print(f"{self.title} by {self.author}, {self.pages} pages.")
 
-c = Car()
-c.start()
+
+book1 = Book("Atomic Habits","James Clear",320)
+book1.describe()

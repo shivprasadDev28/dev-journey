@@ -19,14 +19,12 @@ CLASS
 
 #* current TOPIC OOP
 
-# TODO 
-"""
-Create a Book class with: 
-
-Attributes: title, author, pages
-
-Method: describe() that prints:
-"{title} by {author}, {pages} pages"
-"""
-
-#todo Deque
+#print sum of n using recursion
+def rev(l,r):
+    if l >= r:
+        return
+    num[l] , num[r] = num[r],num[l]
+    return rev(l+1,r-1)
+num = [5,4,3,2,1]
+rev(0,4)
+print(num)

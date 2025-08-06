@@ -19,12 +19,17 @@ CLASS
 
 #* current TOPIC OOP
 
-#print sum of n using recursion
-def rev(l,r):
-    if l >= r:
-        return
-    num[l] , num[r] = num[r],num[l]
-    return rev(l+1,r-1)
-num = [5,4,3,2,1]
-rev(0,4)
-print(num)
+def pal(i):
+    if i >= n//2:
+        return True
+    
+    if word[i] != word[n-i-1]:
+        return False
+    
+    return pal(i+1)
+
+
+word = " "
+word = word.lower().translate(str.maketrans('', '', ' ,:'))
+n = len(word)
+print(pal(0))

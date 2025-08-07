@@ -17,19 +17,16 @@ Functions
 CLASS
 """
 
-#* current TOPIC OOP
+#* current TOPIC HAShing
 
-def pal(i):
-    if i >= n//2:
-        return True
-    
-    if word[i] != word[n-i-1]:
-        return False
-    
-    return pal(i+1)
+s = "leetcode"
 
+h = {}
 
-word = " "
-word = word.lower().translate(str.maketrans('', '', ' ,:'))
-n = len(word)
-print(pal(0))
+for ss in s:
+    h[ss] = h.get(ss,0)+1
+
+for i, c in enumerate(s):
+    if h[c] == 1:
+        print(i)
+        break

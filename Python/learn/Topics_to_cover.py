@@ -19,14 +19,22 @@ CLASS
 
 #* current TOPIC HAShing
 
-s = "leetcode"
+# Input: arr[] = {10,5,10,15,10,5};
+# o/p
+#10 3
+#5 2
+#15 1
+
+num = [10,5,10,15,10,5]
 
 h = {}
 
-for ss in s:
-    h[ss] = h.get(ss,0)+1
 
-for i, c in enumerate(s):
-    if h[c] == 1:
-        print(i)
-        break
+for n in num:
+    h[n] = h.get(n,0)+1
+
+
+high = max(h,key=h.get)
+minn = min(h,key=h.get)
+
+print(high,minn)

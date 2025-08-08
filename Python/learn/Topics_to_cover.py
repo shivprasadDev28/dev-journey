@@ -25,16 +25,16 @@ CLASS
 #5 2
 #15 1
 
-num = [10,5,10,15,10,5]
+num = [1,1,0,1,1,1]
 
-h = {}
-
-
+c = 0
+a = 0
 for n in num:
-    h[n] = h.get(n,0)+1
+    if n == 1:
+        a += 1
+    else:
+        if c < a:
+            c = a
+        a = 0
 
-
-high = max(h,key=h.get)
-minn = min(h,key=h.get)
-
-print(high,minn)
+print(c)

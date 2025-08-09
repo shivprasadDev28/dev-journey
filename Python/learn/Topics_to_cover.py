@@ -25,16 +25,13 @@ CLASS
 #5 2
 #15 1
 
-num = [1,1,0,1,1,1]
+num = [13,46,24,52,20,9]
 
-c = 0
-a = 0
-for n in num:
-    if n == 1:
-        a += 1
-    else:
-        if c < a:
-            c = a
-        a = 0
+for i in range(len(num)-1):
+    min = i
+    for j in range(i,len(num)):
+        if num[j] < num[min]:
+            min = j
+    num[i] , num[min] = num[min],num[i]
 
-print(c)
+print(num)

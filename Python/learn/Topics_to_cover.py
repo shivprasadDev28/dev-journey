@@ -26,12 +26,12 @@ CLASS
 #15 1
 
 num = [13,46,24,52,20,9]
+n = len(num)
 
-for i in range(len(num)-1):
-    min = i
-    for j in range(i+1,len(num)):
-        if num[j] < num[min]:
-            min = j
-    num[i] , num[min] = num[min],num[i]
+for i in range(1,n):
+    j = i
+    while j>0 and num[j-1]>num[j]:
+        num[j-1],num[j] = num[j],num[j-1]
+        j-=1
 
 print(num)

@@ -29,7 +29,7 @@ num = [13,46,24,52,20,9]
 
 for i in range(len(num)-1):
     min = i
-    for j in range(i,len(num)):
+    for j in range(i+1,len(num)):
         if num[j] < num[min]:
             min = j
     num[i] , num[min] = num[min],num[i]

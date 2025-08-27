@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Signup Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="Birth">Birthday:</label>
+            <input type="date" name="Birth" id="Birth">
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Credentials</legend>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms</legend>
+        <div>
+            <p>Do you want to recive emails?</p>
+            
+            <input type="radio" name="recive" id="recive-Yes" value="yes">
+            <label for="recive">Yes</label>
+            
+            <input type="radio" name="recive" id="recive-No" value="no" checked>
+            <label for="recive">No</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="a-terms" id="a-terms" value="accept"/>
+            <label for="a-terms">Agree the Terms and conditions</label>
+
+        </div>
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

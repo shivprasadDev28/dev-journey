@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+    background-color: white;
+    height: 250px;
+    width: 200px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: inset;
+    border-width: 0.5px;
+    box-shadow: 3px 3px 2px;
+}
+#head{
+    font-size: 27px;
+    font-weight: bold;
+    color: #307bfc;
+}
+#text{
+    margin-top: 10px;
+    width: 110px;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#radio1{
+    font-size: 17px;
+    font-weight: bold;
+}
+#radio2{
+    font-size: 17px;
+    font-weight: bold;
+}
+#submit{
+    margin-top: 16px;
+    font-size: 23px;
+    background-color: #fa0064;
+    color: white;
+    border-radius: 4px;
+    border-width: 1;
+}
